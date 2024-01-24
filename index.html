@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <body translate="no">
+    <nav id="navbar">
+      <header>CSS Reference</header>
+      <ul>
+        <li><a class="nav-link" href="#CSS_Reference">CSS Reference</a></li>
+        <li>
+          <a class="nav-link" href="#!important">!important</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#-moz-border-bottom-colors">-moz-border-bottom-colors</a>
+        </li>
+        <li><a class="nav-link" href="#::after">::after</a></li>
+        <li><a class="nav-link" href="#::before">::before</a></li>
+        <li>
+          <a class="nav-link" href="#:first-child">:first-child</a>
+        </li>
+        <li><a class="nav-link" href="#:target">:target</a></li>
+        <li><a class="nav-link" href="#@import">@import</a></li>
+        <li><a class="nav-link" href="#background-position">background-position</a></li>
+        <li><a class="nav-link" href="#border-image">border-image</a></li>
+        <li>
+          <a class="nav-link" href="#box-sizing">box-sizing</a>
+        </li>
+        <li><a class="nav-link" href="#font-size">font-size</a></li>
+        <li>
+          <a class="nav-link" href="#list-style">list-style</a>
+        </li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="CSS_Reference">
+        <header>CSS Reference</header>
+        <article>
+          <p>
+            Cascading Style Sheets is a style sheet language used for describing the presentation of a document written
+            in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and
+            JavaScript.
+          </p>
+
+          <p>
+            There are three types of CSS which are given below: Inline CSS. Internal or Embedded CSS. External CSS
+          </p>
+          <ul>
+            <li>
+              The name cascading comes from the specified priority scheme to determine which style rule applies if more
+              than one rule matches a particular element. This cascading priority scheme is predictable.
+            </li>
+            <li>
+              The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME
+              type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS
+              validation service for CSS documents.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="!important">
+        <header>!important</header>
+        <article>
+          <p>Plays a role when users include their own stylesheet. If there is a conflict where the style of the page
+            author and the user for the same element does not match, then! Important allows the style to take
+            precedence.</p>
+
+          <ul>
+            <li>
+              ! important is added to the author's style - the author's style will be applied.
+            </li>
+            <li>! important is added to the custom style - the custom style will be applied.</li>
+            <li>
+              ! important is not present in both the author's style and the user's style - the author's style will be
+              applied.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="-moz-border-bottom-colors">
+        <header>-moz-border-bottom-colors</header>
+        <article>
+          <p>
+            Sets the set of colors for the bottom border of an element. If the border is thicker than one pixel, you can
+            set a custom color for each line of pixels.
+          </p>
+
+          <p>
+            none - No color, or using the color specified by the border-color property.
+          </p>
+          <p>
+            color - A color value in any format valid for CSS. You can also use the transparent value to specify
+            transparency.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="::after">
+        <header>::after</header>
+        <article>
+          An element that is used to display the desired text after the content of the element to which it is added. The
+          :: after pseudo-element works in conjunction with the content property.
+          <code>element :: after {content: "text"}
+          </code>
+
+          When adding :: after to a block element, the display property value can only be: block, inline, none, marker.
+          All other values will be treated as block.
+        </article>
+      </section>
+      <section class="main-section" id="::before">
+        <header>::before</header>
+        <p>
+          the :: before element is applied to display the desired content before the content of the element to which it
+          is added. Works in conjunction with the content property.
+        </p>
+        <p>
+          When adding :: before to a block element, the display property value can only be: block, inline, none, marker.
+          All other values will be treated as block.
+        </p>
+        <p>
+          When adding :: before to an inline element, display is limited to inline and none. All others will be treated
+          as inline.
+        </p>
+      </section>
+      <section class="main-section" id=":first-child">
+        <header>:first-child</header>
+        <article>
+          The: first-child pseudo-class applies styling to the first child of its parent.
+          <p>
+            The :first-child CSS pseudo-class represents the first element among a group of sibling elements.,
+            <code>element: first-child {...}</code> In this example, the: first-child pseudo-class is added to the
+            selector
+          </p>
+          <p>
+            By simply assigning it a value. For example, <code>
+              p:first-child {
+              color: lime;
+              }</code> As originally defined, the selected element had to have a parent. Beginning with Selectors Level
+            4,
+            this is no longer required.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id=":target">
+        <header>:target</header>
+        <article>
+          <p>
+            To go to the selected fragment of the document, the # symbol is written in the address and the name of the
+            identifier is indicated. For example, at http://www.w3.org/TR/css3-selectors/#target-pseudo, you navigate to
+            an element whose id attribute is target-pseudo.
+          </p>
+
+          <p>
+            This address record is called the "target item". The: target
+            pseudo-class applies to the target element, in other words, the identifier that is specified in the
+            browser's address bar.
+          </p>
+          <code>element: target {...}</code>
+          <p>
+            In this example, the target element is highlighted with a background color.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="@import">
+        <header>@import</header>
+        <article>
+          <p>
+            The @import rule allows you to import the contents of a CSS file into the current style sheet. @import is
+            not allowed to be inserted after any declaration other than @charset or other @import.
+          </p>
+
+          <p> Examples:
+            @import url ("filename") [media types];
+            @import "filename" [media types];
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="background-position">
+        <header>background-position</header>
+        <article>
+          <p>
+            pecifies the starting position of the background image set using the background-image property.
+          </p>
+
+          <code>background-position: [left | center | right | <проценты> | <значение>] ||
+                [top | center | bottom | <проценты> | <значение>] | inherit</code>
+          <p>
+            In CSS3, it is permissible to specify multiple values for each background, listing the values separated by
+            commas.
+          </p>
+          <code>
+            background-position: <позиция>[, <позиция>]*</code>
+        </article>
+      </section>
+      <section class="main-section" id="border-image">
+        <header>border-image</header>
+        <article>
+          <p>Used to display a hand-drawn border around an element. The border thickness is set by the border property,
+            and if border: 0 is specified, then the border is not displayed. With other values of border, the drawing
+            always takes precedence. The background, if set via the background property, is displayed below the frame.
+
+          </p>
+          <code>border-image: none | [ <URL> [<число> | <проценты>]{1,4} [/ <толщина>{1,4}]? ] && [stretch | repeat |
+                    round]{0,2} <проценты> | <значение>] | inherit</code>
+        </article>
+      </section>
+      <section class="main-section" id="box-sizing">
+        <header>box-sizing</header>
+        <article>
+          Применяется для изменения алгоритма расчета ширины и высоты элемента.
+
+          <code>box-sizing: content-box | border-box | padding-box | inherit</code>
+          CONTENT-BOX - Based on CSS standards, the width and height properties set the width and height of the content and do not
+          include padding, margin, and border values.
+          BORDER-BOX - The width and height properties include margin and border values, but not margins. This model is used by the
+          Internet Exporer browser in incompatibility mode.
+          PADDING-BOX - The width and height properties include margin values, but not margins and borders. inherit Inherits the value of the parent.
+        </article>
+      </section>
+      <section class="main-section" id="font-size">
+        <header>font-size</header>
+        <article>
+          Determines the font size of the element. The size can be set in several ways. A set of constants (xx-small, x-small, small, medium, large, x-large, xx-large) sets the size, which is called absolute. In truth, they are not entirely absolute as they depend on browser and operating system settings.
+
+          <code>font-size: absolute size | relative size | value | interest | inherit</code> The following values are used to set the absolute size: xx-small, x-small, small, medium, large, x-large, xx-large. Their correspondence with the font size in HTML is shown in table. one.
+
+          <p>
+            The condition test occurs before statement in the loop is executed. If
+            the condition returns true, statement is executed and the condition is
+            tested again. If the condition returns false, execution stops and
+            control is passed to the statement following while.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="list-style">
+        <header>list-style</header>
+        <article>
+          A universal property that allows you to simultaneously set the style of the marker, its position, and the image that will be used as a marker. For details, see the information on each of the list-style-type, list-style-position, and list-style-image properties separately.
+
+          <ul>
+            <li>The name of the function.</li>
+            <li>
+              inherit
+Inherits the value of the parent.
+            </li>
+          </ul>
+          <p>
+            Syntax
+          </p>
+
+          <code>list-style: list-style-type || list-style-position || list-style-image | inherit</code>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a href="http://htmlbook.ru/" target="_blank">Reference</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/jquery.fancybox.min.js"></script>
+      <script src="js/main.js"></script>
+  </body>
+
+</html>
